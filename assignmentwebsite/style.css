@@ -1,0 +1,24 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  color: darkmagenta;
+  text-align: center;
+}
+
+h2 {
+  color: darkmagenta;
+}
+
+p {
+  color: black;
+}
+
+table {
+  background-color: white;
+}
+
+a {
+  color: blue;
+}

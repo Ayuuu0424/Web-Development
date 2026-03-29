@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal Particular</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" /><br /><br />
+
+        <label for="password">Password:</label>
+        <input type="text" id="password" /><br /><br />
+
+        <div>
+          <span>Gender:</span>
+
+          <span>
+            <label for="g1">Male</label>
+            <input type="radio" name="gender" value="male" id="g1" />
+          </span>
+          <span>
+            <label for="g2">Female</label>
+            <input type="radio" name="gender" value="female" id="g2" />
+          </span>
+        </div>
+
+        <span>Age:</span><br />
+        <select name="Age" id="Age">
+          <option value=" ">< 1 year old</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Languages</legend>
+        <div>
+          <span>
+            <label for="l1">Java</label>
+            <input type="checkbox" value="Java" id="l1" />
+          </span>
+
+          <span>
+            <label for="l2">C/C++</label>
+            <input type="checkbox" value="C/C++" id="l2" />
+          </span>
+
+          <span>
+            <label for="l3">C#</label>
+            <input type="checkbox" value="C#" id="l3" />
+          </span>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Instruction</legend>
+        <textarea
+          name="instruction"
+          id="ainstruction"
+          placeholder="Enter your instruction here..."
+        ></textarea>
+      </fieldset>
+
+      <button type="submit">Send</button>
+      <button type="reset">Clear</button>
+    </form>
+
+     <br>
+    <a href="subIndex.html">⬅ Back to Category</a>
+    <br>
+    <a href="../index.html">⬅ Back to Home</a>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Task 3:</h3>
+
+    <h1>Registration Form</h1>
+
+    <form>
+      <label for="firstname">First Name:</label>
+      <input
+        type="text"
+        id="firstname"
+        placeholder="Enter First Name"
+      /><br /><br />
+
+      <label for="lastname">Last Name:</label>
+      <input
+        type="text"
+        id="lastname"
+        placeholder="Enter Last name"
+      /><br /><br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter Email Address"
+      /><br /><br />
+
+      <label for="password">Email:</label>
+      <input type="password" id="password" /><br /><br />
+
+      <span>Gender:</span><br />
+
+      <label for="g1">Male</label>
+      <input type="radio" name="gender" id="g1" value="male" /><br />
+
+      <label for="g2">Female</label>
+      <input type="radio" name="gender" id="g2" value="female" /><br />
+
+      <label for="g3">Other</label>
+      <input type="radio" name="gender" id="g3" value="other" /><br /><br />
+
+      <div>
+        <span>Age</span>
+        <select name="Age" id="Age">
+          <option value=" ">Select ur age</option>
+          <option value=">18">>18</option>
+          <option value="<18"><18</option>
+        </select>
+      </div>
+
+      <br />
+
+      <span>Preferences:</span>
+
+      <label for="p1">Acrylic Painting:</label>
+      <input type="checkbox" id="p1" value="acrylic painting" /><br /><br />
+
+      <label for="p2">Oil Painting:</label>
+      <input type="checkbox" id="p2" value="oil painting" /><br /><br />
+
+      <label for="p3">Water Color Painting:</label>
+      <input type="checkbox" id="p3" value="water color painting" /><br /><br />
+
+      <div>
+        <span>Select Occupation</span>
+        <select name="Occupation" id="Occupation">
+          <option value=" ">Student</option>
+          <option value="Employed">Employed</option>
+          <option value="Self-Employed">Self-Employed</option>
+          <option value="Homemaker">Homemaker</option>
+        </select>
+      </div>
+
+      <br /><br />
+
+      <span>Bio</span>
+      <textarea
+        name="bio"
+        id="bio"
+        placeholder="Share a few lines about yourself..."
+      ></textarea>
+
+      <br><br>
+
+      <button type="reset">RESET</button>
+      <button type="submit">SUBMIT</button>
+
+      
+    </form>
+
+     <br>
+    <a href="subIndex.html">⬅ Back to Category</a>
+    <br>
+    <a href="../index.html">⬅ Back to Home</a>
+  </body>
+</html>

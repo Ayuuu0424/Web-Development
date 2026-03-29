@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <span>Salutation</span><br />
+        <select name="Salutation" id="Salutation">
+          <option value=" ">None</option>
+          <option value="Dear">Dear</option>
+          <option value="Respected">Respected</option>
+        </select>
+
+        <br /><br />
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" /><br /><br />
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" /><br /><br />
+
+        <div>
+          <span>Gender:</span>
+
+          <span>
+            <label for="g1">Male</label>
+            <input type="radio" name="gender" value="male" id="g1" />
+          </span>
+
+          <span>
+            <label for="g2">Female</label>
+            <input type="radio" name="gender" value="female" id="g2" />
+          </span>
+        </div>
+
+        <br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" /><br /><br />
+
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" /><br /><br />
+
+        <span>Address:</span><br />
+        <textarea name="address" id="address"></textarea>
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+
+     <br>
+    <a href="subIndex.html">⬅ Back to Category</a>
+    <br>
+    <a href="../index.html">⬅ Back to Home</a>
+  </body>
+</html>
