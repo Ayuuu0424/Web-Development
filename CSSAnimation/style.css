@@ -1,0 +1,27 @@
+#div1{
+    width: 50px;
+    border: 1px solid black;
+    height: 20px;
+    overflow: hidden;
+    text-wrap-mode: nowrap;
+    transition: width 5s linear 1s;
+}
+
+#div1:hover{
+    width: 390px;
+    color: red;
+    /* transition: width 2s linear 1s; */
+}
+
+#div2{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    color: red;
+    transition: transform 2s linear;
+}
+
+#div2:hover{
+    transform: translateY(50px);
+}

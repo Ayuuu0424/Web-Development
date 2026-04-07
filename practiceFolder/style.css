@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.outerDiv {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  position: fixed;
+  gap: 10px;
+  top: 0;
+  z-index: 99;
+  width: 92%;
+  margin-bottom: 100px;
+  box-shadow: 0 1px 1px 0 rgb(192, 191, 191);
+
+  .logo1 {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+
+    .Ricrhlogo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .Navlink {
+      display: flex;
+      align-items: center;
+      font-size: 19px;
+      color: black;
+      gap: 60px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .logo2 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      padding: 14px 25px;
+      border: none;
+      background-color: #125785;
+      border-radius: 10px;
+      color: white;
+      box-shadow: 5px 5px 0px 0 #75b2d5;
+      font-size: 17px;
+    }
+  }
+}
+
+.outerDiv1 {
+  background-color: #e6f4fa;
+  margin: 100px 15%;
+  display: grid;
+  padding: 20px 60px;
+  gap: 20px;
+  border-radius: 15px;
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .input-field1 {
+    display: flex;
+    gap: 30px;
+
+    .name {
+      display: grid;
+      width: 50%;
+      gap: 7px;
+
+      input {
+        height: 55px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding-left: 20px;
+        font-size: 16px;
+      }
+    }
+
+    .cNumber {
+      display: grid;
+      width: 50%;
+      gap: 7px;
+
+      input {
+        height: 55px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding-left: 20px;
+        font-size: 16px;
+      }
+    }
+
+    .Year {
+      display: grid;
+      width: 50%;
+      gap: 7px;
+
+      select {
+        height: 55px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding-left: 20px;
+        font-size: 16px;
+      }
+    }
+
+    .Branch {
+      display: grid;
+      width: 50%;
+      gap: 7px;
+
+      input {
+        height: 55px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding-left: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .input-field2 {
+    display: flex;
+    gap: 30px;
+
+    .Email {
+      display: grid;
+      gap: 7px;
+      width: 70%;
+
+      input {
+        height: 55px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding-left: 20px;
+        font-size: 16px;
+      }
+    }
+
+    .Qualification {
+      display: grid;
+      gap: 7px;
+      width: 30%;
+
+      input {
+        height: 55px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding-left: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .CollegeName {
+    display: grid;
+    gap: 7px;
+    width: 100%;
+
+    input {
+      height: 55px;
+      border: 1px solid gray;
+      border-radius: 8px;
+      padding-left: 20px;
+      font-size: 16px;
+    }
+  }
+
+  .para {
+    display: flex;
+    padding-bottom: 20px;
+    color: #475467;
+  }
+
+  .para1 {
+    width: 50%;
+    display: grid;
+    gap: 8px;
+  }
+
+  .para2 {
+    display: grid;
+    width: 50%;
+    gap: 10px;
+    font-size: 16px;
+
+    p2 {
+      text-align: left;
+      gap: 10px;
+
+      b {
+        font-size: 16px;
+        padding-top: 0px;
+      }
+    }
+
+    .p3 {
+      display: grid;
+      width: 100%;
+      gap: 7px;
+
+      select {
+        height: 55px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding-left: 20px;
+        font-size: 16px;
+      }
+    }
+
+    .p4 {
+      display: grid;
+      gap: 7px;
+      width: 100%;
+
+      select {
+        height: 55px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding-left: 20px;
+        font-size: 16px;
+        width: 100%;
+        background-color: #e9ecef;
+      }
+    }
+  }
+
+  .button1 {
+    align-items: center;
+    padding: 17px 20px;
+    width: 15%;
+    margin: 0 43%;
+    border-radius: 30px;
+    background-color: #081a28;
+    color: white;
+    font-size: 18px;
+  }
+}
+
+footer {
+  background-color: #125785;
+  display: grid;
+  padding: 40px 5%;
+  gap: 20px;
+}
+
+.footerhead {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-bottom: 60px;
+
+  .ricr {
+    display: grid;
+    padding-right: 100px;
+
+    img {
+      padding-top: 40px;
+      height: 40px;
+      width: 150px;
+    }
+
+    .RICRpara {
+      color: #b8cdd5;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #edeef0;
+  }
+
+  h3 {
+    color: rgb(255, 255, 255);
+  }
+
+  .Policies {
+    display: grid;
+    gap: 10px;
+
+    h3 {
+      padding-top: 30px;
+      border-top: 1px solid rgb(216, 216, 216);
+    }
+  }
+
+  .OuickLinks {
+    display: grid;
+    gap: 20px;
+    padding: 25px 40px;
+    color: #b8cdd5;
+    text-decoration: none;
+  }
+
+  .OtherLinks {
+    display: grid;
+    gap: 20px;
+    padding: 25px 40px;
+    color: white;
+
+    .link1 {
+      display: grid;
+      gap: 10px;
+    }
+  }
+  .Information {
+    display: grid;
+    gap: 20px;
+    padding: 25px 40px;
+    color: #b8cdd5;
+    .icons {
+      padding: 12px 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    div {
+      display: flex;
+      gap: 10px;
+      color: white;
+    }
+  }
+}
+
+.footerin {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 18px;
+  a {
+    text-decoration: none;
+    color: rgb(225, 221, 221);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .outerDiv1 {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 760px) {
+  .outerDiv1 {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .outerDiv1 {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 1024pxpx) {
+  .footerhead {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 760px) {
+  .footerhead {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footerhead {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 1024pxpx) {
+  .footerin {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 760px) {
+  .footerin {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .footerin {
+    grid-template-columns: auto;
+  }
+}

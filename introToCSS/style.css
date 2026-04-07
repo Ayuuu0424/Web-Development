@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Dancing+Script:wght@400..700&family=Pacifico&family=Satisfy&display=swap");
+
+body {
+  background-color: rgb(252, 215, 234);
+}
+
+h2 {
+  color: darkmagenta;
+}
+
+p {
+  color: black;
+}
+
+div {
+  background-color: white;
+  color: black;
+  /* padding: 10px; */
+}
+
+#first {
+  border: 2px solid black;
+}
+
+#second {
+  border: 3px dashed black;
+  background-color: lightcoral;
+}
+
+h3 {
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#third {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#fourth {
+  font-family: "Pacifico", cursive;
+  font-variant: small-caps;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: cornflowerblue;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 30px;
+  background-color: white;
+}

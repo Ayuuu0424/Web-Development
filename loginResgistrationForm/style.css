@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+#outerDiv {
+  height: 80vh; 
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 100px;
+  padding: 15vh;
+}
+
+.card {
+  background: #fff;
+  width: 300px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px 0 black(255, 0, 0);
+}
+
+.card h1 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+card:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.heading {
+  border-bottom: 3px solid #007bff;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 18px;
+  padding: 5px;
+  gap: 5px;
+}
+
+.form-item svg {
+  color: #888;
+}
+
+.form-item input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.remember input {
+  margin-right: 5px;
+}
+
+.remember a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 1.5px 1.5px 1px 0 gray;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+  background-color: #fff;
+  color: blue;
+}
+
+button:active{
+  box-shadow: none;
+  transform:translate(1.5px, 1,5px);
+  transition: all 0.1s linear;
+}
+
+button:disabled{
+  background-color: lightcoral;
+  color: #e0dfdf;
+  cursor: not-allowed;
+}
+
+input:focus{
+  outline: none;
+}
+
+input{
+  accent-color: lightcoral;
+}
+
+.card p {
+  text-align: center;
+  font-size: 13px;
+}
+
+.card p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
