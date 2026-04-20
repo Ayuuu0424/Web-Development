@@ -17,147 +17,205 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <title>Privacy Policy - Cravings</title>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Cravings</a>
-      </div>
-    </nav>
+    <header class="position-sticky top-0 w-100">
+      <div class="navbar d-flex px-3">
+        <div class="nav-link align-items-center ps-4">
+          <a href="./index.html">
+            <img
+              src="./images/headerLOGO.png"
+              alt="cravingsLogo"
+              width="85px"
+            />
+          </a>
+        </div>
 
-    <!-- HERO -->
+        <div class="nav-link d-flex gap-2 pe-4">
+          <a href="./login.html" class="loginbutton btn text-light fs-9"
+            >Login</a
+          >
+          <a href="./register.html" class="register btn fs-9">Register</a>
+        </div>
+      </div>
+    </header>
+
+
     <section
-      class="legal-hero text-white text-center d-flex align-items-center"
+      class="hero-height position-relative d-flex align-items-center justify-content-center text-center text-white overflow-hidden"
     >
-      <div class="container">
-        <i class="bi bi-shield-lock display-4 mb-3"></i>
-        <h2 class="fw-bold">Privacy Policy</h2>
-        <p>Last updated: April 9, 2026</p>
-      </div>
-    </section>
+      <img
+        src="commonBG.avif"
+        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+      />
 
-    <!-- INTRO -->
-    <section class="py-5">
-      <div class="container text-center">
-        <p class="mx-auto text-secondary" style="max-width: 700px">
-          This Privacy Policy describes how Cravings collects, uses, and shares
-          information about you when you use our services. By using Cravings,
-          you agree to these practices.
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"
+      ></div>
+
+      <div class="position-relative px-3">
+        <i class="fa-solid fa-shield-halved fs-1 mb-3 custom-color"></i>
+
+        <h1 class="fw-bold display-5">
+          Privacy <span class="custom-color">Policy</span>
+        </h1>
+
+        <p class="text-light small">
+          We value your privacy. Learn how Cravings collects, uses, and protects
+          your personal information.
         </p>
+
+        <p class="text-secondary small mt-2">Last updated: April 9, 2026</p>
       </div>
     </section>
 
-    <!-- ACCORDION -->
-    <section class="pb-5">
+    <!-- Intro -->
+    <section class="container text-center py-5">
+      <p class="text-muted">
+        This Privacy Policy describes how
+        <strong class="text-dark">Cravings</strong>
+        collects, uses, and shares your information.
+      </p>
+    </section>
+
+    <!-- Accordion (custom styled) -->
+    <section class="container pb-5" style="max-width: 700px">
+      <div class="policy-box">
+        <button class="policy-btn">
+          <span
+            ><i class="fa-solid fa-database me-2 custom-color"></i>Information
+            We Collect</span
+          >
+          <i class="fa-solid fa-chevron-down text-muted"></i>
+        </button>
+      </div>
+
+      <div class="policy-box">
+        <button class="policy-btn">
+          <span
+            ><i class="fa-solid fa-shield me-2 custom-color"></i>How We Use Your
+            Information</span
+          >
+          <i class="fa-solid fa-chevron-down text-muted"></i>
+        </button>
+      </div>
+
+      <div class="policy-box">
+        <button class="policy-btn">
+          <span
+            ><i class="fa-solid fa-user-shield me-2 custom-color"></i>Sharing
+            Your Information</span
+          >
+          <i class="fa-solid fa-chevron-down text-muted"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="custom-bg text-center py-5 text-white">
+      <i class="fa-solid fa-envelope fs-3 mb-3"></i>
+
+      <h5 class="fw-bold">Questions about your privacy?</h5>
+
+      <p class="small opacity-75">
+        Reach out and we’ll respond within 2 business days.
+      </p>
+
+      <a href="#" class="btn btn-light btn-sm px-4 rounded-pill">
+        contact@cravings.com
+      </a>
+    </section>
+
+    <footer>
       <div class="container">
-        <div class="accordion mx-auto" id="privacyAccordion">
-          <!-- ITEM -->
-          <div class="accordion-item">
-            <button
-              class="accordion-button"
-              data-bs-toggle="collapse"
-              data-bs-target="#p1"
-            >
-              <i class="bi bi-database me-2"></i> Information We Collect
-            </button>
-            <div id="p1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                Account info, order history, device data, and location data.
-              </div>
-            </div>
+        <h3 class="text-center p-4 gap-1 small">
+          --- Your favorite food delivery platform connecting customers with
+          restaurants and riders. ---
+        </h3>
+
+        <div class="upperfooter d-flex justify-content-between gap-3 py-3">
+          <div class="ps-4">
+            <img
+              id="footerLogo"
+              src="./images/circleLOGO.png"
+              alt=""
+              width="130px"
+            />
           </div>
 
-          <div class="accordion-item">
-            <button
-              class="accordion-button collapsed"
-              data-bs-toggle="collapse"
-              data-bs-target="#p2"
+          <div>
+            <p>Quick Links</p>
+            <a class="text-decoration-none d-block" href="./index.html">Home</a>
+            <a class="text-decoration-none d-block" href="./about.html"
+              >About</a
             >
-              <i class="bi bi-shield me-2"></i> How We Use Information
-            </button>
-            <div id="p2" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                To process orders, personalize experience, and improve our
-                services.
-              </div>
-            </div>
+            <a class="text-decoration-none d-block" href="./order-now.html"
+              >Order Now</a
+            >
           </div>
 
-          <div class="accordion-item">
-            <button
-              class="accordion-button collapsed"
-              data-bs-toggle="collapse"
-              data-bs-target="#p3"
+          <div>
+            <p>For Restaurants</p>
+            <a class="text-decoration-none d-block" href="./register.html"
+              >Partner With Us</a
             >
-              <i class="bi bi-people me-2"></i> Sharing Information
-            </button>
-            <div id="p3" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                Shared with restaurants, riders, and legal authorities when
-                required.
-              </div>
-            </div>
+            <a
+              class="text-decoration-none d-block"
+              href="./restaurantdashboard.html"
+              >Restaurants Dashboard</a
+            >
           </div>
 
-          <div class="accordion-item">
-            <button
-              class="accordion-button collapsed"
-              data-bs-toggle="collapse"
-              data-bs-target="#p4"
+          <div>
+            <p>For Riders</p>
+            <a class="text-decoration-none d-block" href="./register.html"
+              >Become a Rider</a
             >
-              <i class="bi bi-cookie me-2"></i> Cookies & Tracking
-            </button>
-            <div id="p4" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                We use cookies to enhance user experience and analytics.
-              </div>
-            </div>
+            <a
+              class="text-decoration-none d-block"
+              href="./restaurantdashboard.html"
+              >Rider Dashboard</a
+            >
           </div>
 
-          <div class="accordion-item">
-            <button
-              class="accordion-button collapsed"
-              data-bs-toggle="collapse"
-              data-bs-target="#p5"
+          <div>
+            <p>Feedback & Support</p>
+            <a class="text-decoration-none d-block" href="./feedback.html"
+              >Submit Feedback</a
             >
-              <i class="bi bi-clock-history me-2"></i> Data Retention
-            </button>
-            <div id="p5" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                Data is retained for service improvement and legal compliance.
-              </div>
-            </div>
+            <a class="text-decoration-none d-block" href="./help-center.html"
+              >Help Center</a
+            >
+            <a class="text-decoration-none d-block" href="./contact.html"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+
+        <div class="border-bottom mt-5 mb-3"></div>
+
+        <div class="footerin d-flex justify-content-between align-items-center">
+          <div>
+            <p class="p-1 mb-0">© 2026 Cravings. All rights reserved.</p>
           </div>
 
-          <div class="accordion-item">
-            <button
-              class="accordion-button collapsed"
-              data-bs-toggle="collapse"
-              data-bs-target="#p6"
-            >
-              <i class="bi bi-person-lock me-2"></i> Your Rights
-            </button>
-            <div id="p6" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                You can request access, correction, or deletion of your data.
-              </div>
-            </div>
+          <!-- ✅ FIXED LINKS -->
+          <div class="d-flex gap-3 m-3">
+            <a class="text-decoration-none" href="./privacy-policy.html">
+              Privacy Policy
+            </a>
+            <a class="text-decoration-none" href="./terms-of-service.html">
+              Terms of Service
+            </a>
+            <a class="text-decoration-none" href="./sitemap.html"> Sitemap </a>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="legal-cta text-white text-center py-5">
-      <div class="container">
-        <h4 class="fw-bold">Questions about your privacy?</h4>
-        <a href="#" class="btn btn-light mt-3">privacy@cravings.com</a>
-      </div>
-    </section>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
