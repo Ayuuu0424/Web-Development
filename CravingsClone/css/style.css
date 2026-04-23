@@ -29,51 +29,6 @@
   font-family: "Inter", sans-serif;
 }
 
-/* Responsive */
-/* mobile */
-@media (max-width: 300px) {
-  .logoimg {
-    transform: scaleX(0);
-    opacity: 0;
-    position: absolute;
-  }
-
-  .navbar.btn {
-    font-size: 14px;
-    padding: 6px 10px;
-  }
-
-  h1.display-5 {
-    font-size: 28px;
-  }
-
-  .search {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-  }
-
-  .row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
-  .card {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .restaurant-section-main img {
-    height: 170px;
-  }
-}
-
 /* header */
 header {
   z-index: 99;
@@ -82,28 +37,50 @@ header {
 .navbar {
   height: 64px;
   background-color: var(--color-primary);
+}
 
-  .loginbutton:hover {
-    border: 1px solid var(--color-primary-content);
-  }
+.loginbutton:hover {
+  border: 1px solid var(--color-primary-content);
+}
 
-  .register {
-    background-color: var(--color-primary-content);
-    color: var(--color-primary);
-  }
+.register {
+  background-color: var(--color-primary-content);
+  color: var(--color-primary);
+}
 
-  .register:hover {
-    background-color: transparent;
-    border: 1px solid var(--color-primary-content);
-    color: var(--color-primary-content);
-  }
+.register:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-primary-content);
+  color: var(--color-primary-content);
 }
 
 /* login-page */
-.login-image {
-  img {
-    height: 90vh;
-  }
+.login-image img {
+  height: 90vh;
+}
+
+.rating {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.search-box {
+  background-color: var(--color-base-300);
+  border-radius: 16px;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+}
+
+.search-box input:focus {
+  box-shadow: none;
+  outline: none;
 }
 
 .card {
@@ -133,18 +110,27 @@ header {
     border-color: var(--color-primary);
     box-shadow: 0 0 0 0.1rem var(--color-primary);
   }
-
-  .form-select {
-    border: 1px solid var(--color-base-300);
-  }
-
-  .form-select:focus {
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 0.1rem var(--color-primary);
-  }
 }
 
-/* login */
+.stats-section {
+  background-color: var(--color-base-100);
+}
+
+.stat-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  aspect-ratio: 1/1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
 #logiin {
   color: var(--color-primary-content);
   background-color: var(--color-primary);
@@ -311,61 +297,94 @@ footer {
   }
 }
 
-/* Cravings-In-Numbers  */
-.Cravings-In-Numbers {
+/* About */
+.hero {
+  height: 60vh;
+  position: relative;
+  background: url("../images/Aboutbg.jpeg") center/cover no-repeat;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.text-brand {
+  color: #c2410c;
+}
+
+.stats-bar-section {
+  background-color: var(--color-neutral);
+}
+
+.stats-bar-section .text-main {
+  color: var(--color-primary);
+}
+
+.story-section {
   background-color: var(--color-base-100);
-
-  .container {
-    color: var(--color-base-content);
-  }
-
-  .card-1:hover {
-    box-shadow: var(--color-neutral);
-  }
-
-  h1 {
-    color: var(--color-primary);
-  }
-
-  h5 {
-    color: var(--color-base-content);
-  }
-
-  p {
-    color: var(--color-base-content);
-  }
 }
 
-/* customer-rating  */
-.customer-rating {
-  h2 {
-    color: var(--color-base-content);
-  }
-
-  .text {
-    color: var(--color-base-content);
-  }
-
-  h5 {
-    color: var(--color-base-content);
-  }
-
-  p {
-    color: var(--color-base-content);
-  }
+.story-section .text-main {
+  color: var(--color-primary);
 }
 
-.circle {
+.value-section {
+  background-color: var(--color-base-200);
+}
+
+.value-section .text-main {
+  color: var(--color-primary);
+}
+
+.team-section {
+  background-color: var(--color-base-100);
+}
+
+.team-section .text-main {
+  color: var(--color-primary);
+}
+
+.team {
+  background-color: var(--color-primary);
   color: var(--color-primary-content);
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+#getstartbtn {
+  color: var(--color-primary);
+}
+
+.cta-section {
   background-color: var(--color-primary);
 }
 
-.circle-1 {
-  color: var(--color-primary-content);
-  background-color: #d9468f;
+/* Register */
+.register-hero {
+  height: 90vh;
+  background: url("../images/LoReBG.webp") center/cover no-repeat;
 }
 
-/* order-now */
+.form-card {
+  width: 420px;
+  border-radius: 12px;
+}
+
+.register-btn {
+  background-color: #c2410c;
+  color: white;
+}
+
+.register-btn:hover {
+  background-color: #a6360a;
+}
+
+.text-main {
+  color: #c2410c;
+}
+
+/* Order Now */
 .search {
   z-index: 40;
   background-color: var(--color-base-200);
@@ -382,6 +401,11 @@ footer {
   input {
     color: var(--color-primary);
   }
+}
+
+/* Privacy Policy */
+.hero-height {
+  height: 45vh;
 }
 
 /* restaurant-section-order  */
@@ -440,117 +464,6 @@ footer {
   }
 }
 
-/* about-section  */
-.about-section {
-  object-fit: cover;
-
-  .text-main {
-    color: var(--color-primary);
-  }
-
-  .img {
-    height: 60vh;
-  }
-
-  .logo {
-    width: 80px;
-  }
-}
-
-.hero {
-  height: 60vh;
-  position: relative;
-  background: url("../images/Aboutbg.jpeg") center/cover no-repeat;
-}
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-}
-
-.text-brand {
-  color: var(--color-primary);
-}
-
-.rating-bar-section {
-  background-color: var(--color-neutral);
-
-  .text-main {
-    color: var(--color-primary);
-  }
-}
-
-.story-section {
-  background-color: var(--color-base-100);
-
-  .text-main {
-    color: var(--color-primary);
-  }
-}
-
-.value-section {
-  background-color: var(--color-base-200);
-
-  .text-main {
-    color: var(--color-primary);
-  }
-}
-
-.team-section {
-  background-color: var(--color-base-100);
-
-  .text-main {
-    color: var(--color-primary);
-  }
-
-  .team {
-    background-color: var(--color-primary);
-    color: var(--color-primary-content);
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-  }
-
-  #getstartbtn {
-    color: var(--color-primary);
-  }
-}
-
-/* cta-section */
-.cta-section {
-  background-color: var(--color-primary);
-}
-
-/* register */
-.hero {
-  height: 90vh;
-  background: url("../images/table.webp") center/cover no-repeat;
-
-  h2 {
-    color: var(--color-primary);
-  }
-
-  .form-card {
-    width: 420px;
-    border-radius: 12px;
-  }
-
-  .btn {
-    background-color: var(--color-primary);
-    color: var(--color-primary-content);
-  }
-
-  .register-btn:hover {
-    background-color: var(--color-primary);
-    color: var(--color-primary-content);
-  }
-
-  .text-main {
-    color: var(--color-primary);
-  }
-}
-
 /* Register-dashboard */
 .Register-dashboard {
   min-height: 85vh;
@@ -570,7 +483,7 @@ footer {
   background-color: var(--color-primary);
 }
 
-/* feedback-section */
+/* Feedback  */
 .feedback-section {
   h2 {
     color: var(--color-primary);
@@ -604,7 +517,7 @@ footer {
   }
 }
 
-/* help-center */
+/* Help-Center */
 .help-center-section {
   height: 85vh;
 
@@ -617,10 +530,35 @@ footer {
     border: none;
   }
 }
+
 /* privacy-section */
 .privacy-section {
   height: 40vh;
 }
+
+.section-1 {
+  .text-main {
+    color: var(--color-primary);
+  }
+}
+
+.section-2 {
+  background-color: var(--color-base-100);
+
+  i {
+    color: var(--color-primary);
+  }
+}
+
+.section-3 {
+  background-color: var(--color-primary);
+
+  p {
+    color: var(--color-base-300);
+  }
+}
+
+/* Privacy-terms*/
 .section-1 {
   .text-main {
     color: var(--color-primary);
