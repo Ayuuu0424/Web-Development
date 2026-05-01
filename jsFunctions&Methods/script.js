@@ -18,3 +18,7 @@ let abc = function () {
 };
 
 console.log(abc);
+
+
+// ...To call the function...
+abc()
