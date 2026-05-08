@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Color Changer</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="p-5">
+    <div class="container border border-2 border-dark">
+      <div class="row">
+        <div class="col-md-8 p-5 border-end border-2 border-dark" id="mainBox">
+          <h1 id="heading" class="mb-4">This is a Heading</h1>
+
+          <p id="para" class="fs-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ea
+            corrupti distinctio consequatur unde asperiores nisi voluptatibus
+            maiores sed repellat provident soluta molestias illo itaque cumque
+            illum corporis, voluptates quibusdam esse, iste quaerat laborum sit
+            nostrum accusantium. Eveniet, saepe rerum.
+          </p>
+        </div>
+
+        <div class="col-md-4 p-5 d-flex flex-column gap-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <label>Background Color</label>
+
+            <input type="color" id="bgColor" />
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <label>Heading Color</label>
+
+            <input type="color" id="headingColor" />
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <label>Paragraph Color</label>
+
+            <input type="color" id="paraColor" />
+          </div>
+
+          <button class="btn btn-dark w-50" id="resetBtn">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
