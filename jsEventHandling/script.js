@@ -32,7 +32,7 @@ function resizeTo(){
 }
 
 // document
-//   .getElementById("bgColor")
+//   .getElementById("bgColor"')
 //   .addEventListener("change", changeBackgroundColor);
 
 // document
