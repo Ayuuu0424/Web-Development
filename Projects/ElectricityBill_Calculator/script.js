@@ -41,8 +41,6 @@ document.getElementById("billForm").addEventListener("submit", (event) => {
 
   const grandTotal = subtotal + surcharge;
 
-  // Display values
-
   document.getElementById("slab1").innerText =
     `${slab1Units} Units = ₹${slab1Charge.toFixed(2)}`;
 

@@ -19,7 +19,7 @@ function Calculate(data) {
   if (data === "=") {
     let EQ = equation.innerText;
 
-    // Convert percentage into division by 100
+    // ...Convert percentage into division by 100...
     EQ = EQ.replace(/%/g, "/100");
 
     const solution = eval(EQ);
