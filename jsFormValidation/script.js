@@ -25,16 +25,20 @@
 // }
 
 function submit() {
+  // fullName,phone,email,password input box ki value ko variables fn,ph,em,ps me store kr rhe h
   const fn = document.getElementById("fullName").value;
   const ph = document.getElementById("phone").value;
   const em = document.getElementById("email").value;
   const ps = document.getElementById("password").value;
 
+  // Jitne bhi elements ki class .error hai un sabko select kar raha hai.
   document.querySelectorAll(".error").forEach((element) => {
+    // Sab old error messages ko empty kar raha hai.
     element.innerText = "";
   });
 
   if (!/^[A-Za-z\s]+$/.test(fn)) {
+    // Agar name galat hai toh error message show karega.
     document.getElementById("nameError").innerText = "Invalid Full Name";
   }
 
