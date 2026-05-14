@@ -4,11 +4,12 @@ document
   .addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const fn = document.getElementById("fullName").value;
+    // Data
+    const fullName = document.getElementById("fullName").value.trim();
 
-    const email = document.getElementById("email").value;
+    const email = document.getElementById("email").value.trim();
 
-    const phone = document.getElementById("phone").value;
+    const phone = document.getElementById("phone").value.trim();
 
     const dob = document.getElementById("dob").value;
 
@@ -26,7 +27,9 @@ document
 
     // ...Radio Button...
 
-    const gndr = document.querySelector("input[name='gender']:checked")?.value;
+    const gender = document.querySelector(
+      "input[name='gender']:checked",
+    )?.value;
 
     // ...Checkbox...
     const timings = [];
@@ -41,18 +44,28 @@ document
 
     console.log(timings);
 
-    console.log(fn);
-    console.log(email);
-    console.log(phone);
-    console.log(dob);
-    console.log(qualification);
-    console.log(marks);
-    console.log(course);
-    console.log(address);
-    console.log(city);
-    console.log(pin);
- 
-  });
+    // Data Packet
+    const registrationData = {
+      "Full Name:": fullName,
+      "Email:": email,
+      "Phone:": phone,
+      "Date of Birth": dob,
+      "Qualification:": qualification,
+      "Marks:": marks,
+      "Course:": course,
+      "Address:": address,
+      "City:": city,
+      "Pin Code:": pin,
+    };
+
+
+    validateData(registrationData)?
+    (
+      console.log("Registration Data:", registrationData),
+      alert("Registration successful! Check console for details.")
+      
+    )
+  );
 
 // ResetButton
 document
@@ -62,3 +75,7 @@ document
 
     window.location.reload();
   });
+
+function ValidateData(data) {
+  let valid = true;
+}
