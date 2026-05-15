@@ -1,37 +1,115 @@
-// ...Submit Button...
+// // ...Submit Button...
+// document
+//   .getElementById("registrationFrom")
+//   .addEventListener("submit", (event) => {
+//     event.preventDefault();
+
+//     // Data
+//     const fullName = document.getElementById("fullName").value.trim();
+
+//     const email = document.getElementById("email").value.trim();
+
+//     const phone = document.getElementById("phone").value.trim();
+
+//     const dob = document.getElementById("dob").value;
+
+//     const qualification = document.getElementById("qualification").value;
+
+//     const marks = document.getElementById("marks").value;
+
+//     const course = document.getElementById("course").value;
+
+//     const address = document.getElementById("address").value;
+
+//     const city = document.getElementById("city").value.trim();
+
+//     const pin = document.getElementById("pin").value;
+
+//     // ...Radio Button...
+
+//     const gender = document.querySelector(
+//       "input[name='gender']:checked",
+//     )?.value;
+
+//     // ...Checkbox...
+//     const timings = [];
+
+//     document
+//       .querySelectorAll("input[name='timings']:checked")
+//       .forEach((item) => {
+//         timings.push(item.value);
+//       });
+
+//     console.log(gndr);
+
+//     console.log(timings);
+
+//     // Data Packet
+//     const registrationData = {
+//       "Full Name:": fullName,
+//       "Email:": email,
+//       "Phone:": phone,
+//       "Date of Birth": dob,
+//       "Qualification:": qualification,
+//       "Marks:": marks,
+//       "Course:": course,
+//       "Address:": address,
+//       "City:": city,
+//       "Pin Code:": pin,
+//     };
+
+//     validateData(registrationData)?
+//     (
+//       console.log("Registration Data:", registrationData),
+//       alert("Registration successful! Check console for details.")
+
+//     )
+//   );
+
+// // ResetButton
+// document
+//   .getElementById("registrationFrom")
+//   .addEventListener("reset", (event) => {
+//     event.preventDefault();
+
+//     window.location.reload();
+//   });
+
+// function ValidateData(data) {
+//   let valid = true;
+// }
+
+// Submit Button
 document
   .getElementById("registrationFrom")
   .addEventListener("submit", (event) => {
     event.preventDefault();
 
-    // Data
-    const fullName = document.getElementById("fullName").value.trim();
+    // =========================
+    // INPUT VALUES
+    // =========================
 
+    const fn = document.getElementById("fullName").value.trim();
     const email = document.getElementById("email").value.trim();
-
     const phone = document.getElementById("phone").value.trim();
-
     const dob = document.getElementById("dob").value;
-
     const qualification = document.getElementById("qualification").value;
-
-    const marks = document.getElementById("marks").value;
-
+    const marks = document.getElementById("marks").value.trim();
     const course = document.getElementById("course").value;
-
-    const address = document.getElementById("address").value;
-
+    const address = document.getElementById("address").value.trim();
     const city = document.getElementById("city").value.trim();
+    const pin = document.getElementById("pin").value.trim();
 
-    const pin = document.getElementById("pin").value;
+    // =========================
+    // RADIO BUTTON
+    // =========================
 
-    // ...Radio Button...
+    const gndr = document.querySelector("input[name='gender']:checked")?.value;
 
-    const gender = document.querySelector(
-      "input[name='gender']:checked",
-    )?.value;
+    // =========================
+    // CHECKBOXES
+    // =========================
 
-    // ...Checkbox...
     const timings = [];
 
     document
@@ -40,42 +118,131 @@ document
         timings.push(item.value);
       });
 
-    console.log(gndr);
+    // =========================
+    // CLEAR OLD ERRORS
+    // =========================
 
-    console.log(timings);
+    document.querySelectorAll(".text-danger").forEach((item) => {
+      item.innerText = "";
+    });
 
-    // Data Packet
-    const registrationData = {
-      "Full Name:": fullName,
-      "Email:": email,
-      "Phone:": phone,
-      "Date of Birth": dob,
-      "Qualification:": qualification,
-      "Marks:": marks,
-      "Course:": course,
-      "Address:": address,
-      "City:": city,
-      "Pin Code:": pin,
-    };
+    let isValid = true;
 
+    // =========================
+    // VALIDATIONS
+    // =========================
 
-    validateData(registrationData)?
-    (
-      console.log("Registration Data:", registrationData),
-      alert("Registration successful! Check console for details.")
-      
-    )
-  );
+    // Full Name
+    if (!/^[A-Za-z\s]+$/.test(fn)) {
+      document.getElementById("fullNameError").innerText =
+        "Enter valid full name";
+      isValid = false;
+    }
 
-// ResetButton
-document
-  .getElementById("registrationFrom")
-  .addEventListener("reset", (event) => {
-    event.preventDefault();
+    // Email
+    if (!/^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(email)) {
+      document.getElementById("emailError").innerText = "Enter valid email";
+      isValid = false;
+    }
 
-    window.location.reload();
+    // Phone
+    if (!/^[6-9]\d{9}$/.test(phone)) {
+      document.getElementById("phoneError").innerText =
+        "Enter valid mobile number";
+      isValid = false;
+    }
+
+    // DOB
+    if (dob === "") {
+      document.getElementById("dobError").innerText = "Select date of birth";
+      isValid = false;
+    }
+
+    // Gender
+    if (!gndr) {
+      document.getElementById("dobError").innerText = "Select gender";
+      isValid = false;
+    }
+
+    // Qualification
+    if (qualification === "") {
+      document.getElementById("qualificationError").innerText =
+        "Select qualification";
+      isValid = false;
+    }
+
+    // Marks
+    if (marks === "") {
+      document.getElementById("marksError").innerText =
+        "Enter percentage or grade";
+      isValid = false;
+    }
+
+    // Course
+    if (course === "") {
+      document.getElementById("courseError").innerText =
+        "Select preferred course";
+      isValid = false;
+    }
+
+    // Timings
+    if (timings.length === 0) {
+      document.getElementById("timingsError").innerText =
+        "Select at least one timing";
+      isValid = false;
+    }
+
+    // Address
+    if (address.length < 10) {
+      document.getElementById("addressError").innerText =
+        "Enter complete address";
+      isValid = false;
+    }
+
+    // City
+    if (!/^[A-Za-z\s]+$/.test(city)) {
+      document.getElementById("cityError").innerText = "Enter valid city";
+      isValid = false;
+    }
+
+    // Pin Code
+    if (!/^\d{6}$/.test(pin)) {
+      document.getElementById("pinError").innerText =
+        "Enter valid 6 digit pin code";
+      isValid = false;
+    }
+
+    // =========================
+    // FINAL SUBMIT
+    // =========================
+
+    if (isValid) {
+      const formData = {
+        fullName: fn,
+        email: email,
+        phone: phone,
+        dob: dob,
+        gender: gndr,
+        qualification: qualification,
+        marks: marks,
+        course: course,
+        timings: timings,
+        address: address,
+        city: city,
+        pin: pin,
+      };
+
+      console.log(formData);
+
+      alert("Registration Successful");
+
+      document.getElementById("registrationFrom").reset();
+    }
   });
 
-function ValidateData(data) {
-  let valid = true;
-}
+// Reset Button
+document.getElementById("registrationFrom").addEventListener("reset", () => {
+  document.querySelectorAll(".text-danger").forEach((item) => {
+    item.innerText = "";
+  });
+});
