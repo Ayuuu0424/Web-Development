@@ -21,7 +21,7 @@ document
 
     const address = document.getElementById("address").value;
 
-    const city = document.getElementById("city").value;
+    const city = document.getElementById("city").value.trim();
 
     const pin = document.getElementById("pin").value;
 
