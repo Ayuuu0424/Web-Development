@@ -7,7 +7,7 @@ function getData(value) {
   });
 }
 
-// console.log(getData(1));
+console.log(getData(1));
 
 const myPromise = getData(1); // getData is a function call
 
