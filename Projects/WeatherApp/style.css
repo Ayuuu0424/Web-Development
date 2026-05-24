@@ -1,0 +1,18 @@
+body {
+  /* background: linear-gradient(to right, #74ebd5, #9face6); */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-card {
+  width: 350px;
+  border-radius: 20px;
+}
+
+.temp {
+  font-size: 45px;
+  font-weight: bold;
+  color: #0d6efd;
+}
