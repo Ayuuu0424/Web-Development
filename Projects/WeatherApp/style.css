@@ -1,5 +1,4 @@
-body {
-  /* background: linear-gradient(to right, #74ebd5, #9face6); */
+/* body {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,4 +14,41 @@ body {
   font-size: 45px;
   font-weight: bold;
   color: #0d6efd;
+} */
+
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: Arial, sans-serif;
+}
+
+.weather-card {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.info-card {
+  border-radius: 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.info-card p {
+  margin: 0;
+  font-weight: bold;
+}
+
+#weatherIcon {
+  width: 120px;
+}
+
+.form-control {
+  border: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
 }
