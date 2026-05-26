@@ -1,0 +1,70 @@
+body {
+  min-height: 100vh;
+  background: url("WeatherApp2.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.glass-card {
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  overflow: hidden;
+}
+
+.small-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 15px;
+  height: 100%;
+}
+
+.forecast-box {
+  min-width: 85px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.temp-text {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.weather-icon {
+  width: 80px;
+}
+
+.right-panel {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+input {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: none !important;
+  color: white !important;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.list-group-item {
+  background: transparent !important;
+  color: white !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+@media (max-width: 768px) {
+  .temp-text {
+    font-size: 50px;
+  }
+}
