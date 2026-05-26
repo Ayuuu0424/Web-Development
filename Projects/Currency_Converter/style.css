@@ -1,0 +1,106 @@
+body {
+  min-height: 100vh;
+  background: url("currency-bg.jpg") center/cover no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  font-family: Arial, sans-serif;
+}
+
+.glass-card {
+  width: 100%;
+  max-width: 1000px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  color: white;
+
+  overflow: hidden;
+}
+
+.small-card {
+  background: rgba(255, 255, 255, 0.08);
+
+  border-radius: 18px;
+
+  padding: 20px;
+}
+
+select,
+input {
+  background: rgba(255, 255, 255, 0.15) !important;
+
+  border: none !important;
+
+  color: white !important;
+}
+
+select option {
+  color: black;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.flag-img {
+  width: 80px;
+  height: 55px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.convert-btn {
+  height: 55px;
+
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.result-box {
+  background: rgba(255, 255, 255, 0.1);
+
+  border-radius: 18px;
+
+  padding: 20px;
+}
+
+.result-text {
+  font-size: 45px;
+
+  font-weight: bold;
+}
+
+.swap-btn {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  color: white;
+
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .result-text {
+    font-size: 30px;
+  }
+}
