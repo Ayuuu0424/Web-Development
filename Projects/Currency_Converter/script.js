@@ -11,8 +11,8 @@ async function convertCurrency() {
     return;
   }
 
-  const API = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${from}.json`;
-
+  const API = `https://latest.currency-api.pages.dev/v1/currencies/${from}.json`;
+  
   const response = await fetch(API);
 
   const data = await response.json();
@@ -28,22 +28,19 @@ async function convertCurrency() {
     `1 ${from.toUpperCase()} = ${rate.toFixed(2)} ${to.toUpperCase()}`;
 }
 
-
 document.getElementById("country1").addEventListener("change", function () {
   const code = this.value.split(",")[1];
 
   document.getElementById("flag1").src =
-    `https://flagsapi.com/${code}/flat/64.png`;
+    `https://flagsapi.com/${US}/flat/64.png`;
 });
-
 
 document.getElementById("country2").addEventListener("change", function () {
   const code = this.value.split(",")[1];
 
   document.getElementById("flag2").src =
-    `https://flagsapi.com/${code}/flat/64.png`;
+    `https://flagsapi.com/${IN}/flat/64.png`;
 });
-
 
 function swapCurrency() {
   const country1 = document.getElementById("country1");
