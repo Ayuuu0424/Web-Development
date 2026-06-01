@@ -13,7 +13,7 @@ function App() {
       <Header />
       <div id="abcd">My First React App</div>
 
-      <p className="bg-succes">
+      <p className="bg-success">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis velit
         harum laborum ab minima! Nesciunt, exercitationem at atque vitae omnis
         ut eaque doloribus eius fugit?
