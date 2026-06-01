@@ -3,24 +3,30 @@
 // website develop krne k liye dev dependencies use hoti h
 
 //  import React from "react";
-
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import ContactUs from "./pages/ContactUs";
+import Login from "./pages/Login";
+import Products from "./pages/Products";
+import Register from "./pages/Register";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <div id="abcd">My First React App</div>
 
-      <p className="bg-success">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis velit
-        harum laborum ab minima! Nesciunt, exercitationem at atque vitae omnis
-        ut eaque doloribus eius fugit?
-      </p>
-
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
