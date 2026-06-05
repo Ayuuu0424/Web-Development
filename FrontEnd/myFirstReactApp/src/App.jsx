@@ -11,15 +11,13 @@ import Login from "./pages/Login";
 import Products from "./pages/Products";
 import Register from "./pages/Register";
 
-import { FaWifi } from "react-icons/fa";
+// import { FaWifi } from "react-icons/fa";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
