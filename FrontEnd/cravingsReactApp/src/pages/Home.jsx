@@ -141,13 +141,13 @@ function Home() {
 
         <div className="hero-overlay position-absolute d-flex align-items-center justify-content-center text-center">
           <div className="container">
-            <h1 className="fw-bold display-4">
+            <h1 className="text-light fw-bold display-4">
               Your Favorite Food,
               <br />
               Delivered Fast
             </h1>
 
-            <p className="fs-5 mt-3">
+            <p className="text-light fs-5 mt-3">
               Order from thousands of restaurants and get it delivered to your
               doorstep
             </p>
