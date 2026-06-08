@@ -1,0 +1,284 @@
+:root {
+  --color-primary: #c2410c;
+  --color-primary-content: #ffffff;
+  --color-secondary: #6b7280;
+  --color-neutral: #3f3f46;
+  --color-neutral-content: #f4f4f5;
+  --color-base-100: #fff8f1;
+  --color-base-200: #f5ede5;
+  --color-base-300: #e7d9c9;
+  --color-base-content: #2d1b10;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-base-100);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+  z-index: 999;
+}
+
+.navbar {
+  height: 64px;
+  background-color: var(--color-primary);
+}
+
+.loginbutton {
+  color: white !important;
+}
+
+.loginbutton:hover {
+  border: 1px solid white;
+}
+
+.register {
+  background-color: white;
+  color: var(--color-primary);
+}
+
+.register:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.Hero-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.Hero-section h1 {
+  color: var(--color-base-content);
+}
+
+.Hero-section p {
+  color: var(--color-secondary);
+}
+
+.hero-overlay {
+  inset: 0;
+  z-index: 2;
+}
+
+#sign-up {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+#sign-up:hover {
+  background-color: var(--color-primary);
+  opacity: 0.9;
+}
+
+#order-now {
+  background-color: white;
+  color: var(--color-base-content);
+}
+
+#order-now:hover {
+  background-color: var(--color-base-200);
+}
+
+/* =========================
+   RESTAURANTS
+========================= */
+
+.restaurant-section {
+  background: linear-gradient(
+    var(--color-primary),
+    var(--color-primary-content)
+  );
+}
+
+.restaurant-section h2,
+.restaurant-section p {
+  color: white;
+}
+
+.restaurant-card {
+  transition: 0.3s;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+.restaurant-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.rating {
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 14px;
+}
+
+.tag-badge {
+  background-color: var(--color-base-300);
+  color: var(--color-base-content);
+}
+
+.btn-custom {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* =========================
+   STATS SECTION
+========================= */
+
+.Cravings-In-Numbers {
+  background-color: var(--color-base-100);
+}
+
+.text-main {
+  color: var(--color-primary);
+}
+
+.Cravings-In-Numbers .card {
+  border: none;
+  transition: 0.3s;
+}
+
+.Cravings-In-Numbers .card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonial-card {
+  border: none;
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   PARTNER CTA
+========================= */
+
+.member-of-us {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.member-of-us .btn {
+  background-color: white;
+  color: var(--color-primary);
+}
+
+.member-of-us .btn:hover {
+  background-color: var(--color-base-200);
+}
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.form-card {
+  width: 420px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.form-card h1,
+.form-card h2 {
+  color: var(--color-primary);
+}
+
+.form-card p {
+  color: var(--color-secondary);
+}
+
+.form-control {
+  border: 1px solid var(--color-base-300);
+}
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.1rem rgba(194, 65, 12, 0.25);
+}
+
+#logiin {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.eye {
+  right: 12px;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.eye:hover {
+  color: var(--color-primary);
+}
+
+/* =========================
+   REGISTER PAGE
+========================= */
+
+.register-hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-btn {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.register-btn:hover {
+  background-color: #a6360a;
+  color: white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background-color: var(--color-neutral);
+  color: var(--color-neutral-content);
+}
+
+footer a {
+  color: var(--color-neutral-content);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-primary);
+}
+
+.footerin {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

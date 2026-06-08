@@ -9,7 +9,7 @@ function Header() {
         <div className="d-flex gap-4">
           <Link to={"/"}>Home</Link>
           <Link to={"/about"}>About</Link>
-          <Link to={"/products"}>Products</Link>
+          <Link to={"/products"}>products</Link>
           <Link to={"/contactus"}>Contact Us</Link>
         </div>
 
@@ -17,7 +17,6 @@ function Header() {
           <Link to={"/login"}>
             <button className="btn btn-outline-primary">Login</button>
           </Link>
-
           <Link to={"/register"}>
             <button className="btn btn-primary">Register</button>
           </Link>
