@@ -4,11 +4,11 @@ dotenv.config();
 import express from "express";
 import AuthRouter from "./src/routers/auth.route.js";
 import PublicRouter from "./src/routers/public.route.js";
-import connectDB from "./src/config/db.Connection.config.js"
+import connectDB from "./src/config/db.Connection.config.js";
 
 const app = express();
 
-app.use(express.json())
+app.use(express.json());
 
 app.use("/auth", AuthRouter);
 app.use("/public", PublicRouter);
@@ -17,6 +17,14 @@ app.use("/public", PublicRouter);
 app.get("/", (req, res) => {
   console.log("Default Get API Hit");
   res.json({ message: "Welcome to my first backend project" });
+});
+
+// Default Error Handler
+app.use((err, req, res, next) => {
+  const ErrMessage = err.message || "Internal Server Errror";
+  const ErrStatusCode = err.statusCode || 500;
+
+  req.status(ErrStatusCode).json({ message: ErrMessage });
 });
 
 const port = process.env.PORT || 5000;
